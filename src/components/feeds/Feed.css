@@ -1,0 +1,21 @@
+.feed{
+    flex: 0.5;
+    height: 100vh;
+    overflow: scroll;
+    border-right: 1px solid var(--twitter-background);
+    
+}
+
+.feed::-webkit-scrollbar{
+    display: none;
+}
+
+.feed_header{
+    border-bottom: 1px solid var(--twitter-background);
+    padding: 10px 20px;
+}
+
+.feed_header>h2{
+    font-weight: 900;
+    font-size: 20px;
+}

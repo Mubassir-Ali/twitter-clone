@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css';
-import Feeds from './components/feeds/Feeds';
+import Feeds from './components/feeds/Feed';
 import Sidebar from './components/sidebar/Sidebar';
 import Widgets from './components/widgets/Widgets';
 

@@ -1,6 +1,5 @@
 .widgets{
     flex: 0.3;
     height: 100vh;
-    color: var(--twitter-color);
-    background-color: var(--twitter-background);
+        
 }

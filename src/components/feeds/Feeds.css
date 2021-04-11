@@ -1,9 +1,0 @@
-.feeds{
-    flex: 0.4;
-    height: 100vh;
-    overflow: scroll;
-}
-
-.feeds::-webkit-scrollbar{
-    display: none;
-}
