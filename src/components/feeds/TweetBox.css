@@ -29,7 +29,7 @@ border-bottom: 1px solid var(--twitter-background);
     color: var(--twitter-color) !important;
     margin-top: 20px;
     margin-left: 10px;
- 
+ cursor: pointer;
     display: flex;
     align-items: center;
 }
@@ -66,5 +66,16 @@ border-bottom: 1px solid var(--twitter-background);
     width: 80px !important;
     height: 40px !important;
     margin-left: auto !important;
+    
+}
+
+.tweetBox__tweetButtonDisable{
+    /* transition: 10000ms ease-in; */
+    margin-left: auto !important;
+    font-weight: 900 !important;
+    text-transform: inherit !important;
+    border-radius: 30px !important;        
+    width: 80px !important;
+    height: 40px !important;
     
 }

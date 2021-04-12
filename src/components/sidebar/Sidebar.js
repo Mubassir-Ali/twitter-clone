@@ -11,6 +11,7 @@ import PermIdentityIcon from '@material-ui/icons/PermIdentity';
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 import { Button, IconButton } from '@material-ui/core';
 import TwitterIcon from '@material-ui/icons/Twitter';
+import AddCircleIcon from '@material-ui/icons/AddCircle';
 
 function Sidebar() {
 	return (
@@ -33,6 +34,7 @@ function Sidebar() {
 			<Button fullWidth variant="outlined" className="sidebar_tweet">
 				Tweet
 			</Button>
+		<AddCircleIcon className='sidebar_tweetPlus'/>
 		</div>
 	);
 }

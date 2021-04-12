@@ -1,8 +1,9 @@
 .feed{
-    flex: 0.5;
+    flex: 0.6;
     height: 100vh;
     overflow: scroll;
     border-right: 1px solid var(--twitter-background);
+
     
 }
 
@@ -16,6 +17,7 @@
 }
 
 .feed_header>h2{
-    font-weight: 900;
+    font-weight: 700;
     font-size: 20px;
 }
+

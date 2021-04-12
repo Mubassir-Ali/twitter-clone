@@ -1,0 +1,28 @@
+.signIn{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-30%);
+    border-radius: 30px;
+    padding: 20px 30px;
+    
+
+
+  
+}
+
+.twitter_icon{
+    color: var(--twitter-color);
+    font-size: 50px !important;
+
+}
+
+.login_button{
+    background-color:var(--twitter-color) !important;
+    color: white !important;
+    margin-top: 100px !important;
+}
