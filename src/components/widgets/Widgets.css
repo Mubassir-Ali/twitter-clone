@@ -3,3 +3,10 @@
     height: 100vh;
         
 }
+
+.widgets__input{
+    display: flex;
+    align-items: center;
+  
+  
+}
