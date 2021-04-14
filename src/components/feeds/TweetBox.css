@@ -7,21 +7,28 @@ border-bottom: 1px solid var(--twitter-background);
 
 .tweetBox__input{
     display: flex;
+    height: fit-content;
 }
 
 .tweetBox>form{
     display: flex;
     flex-direction: column;
 }
-.tweetBox__input>input{
+textarea{
     margin-left: 10px;    
     flex: 1;
     outline: none;
     padding: 2px 4px;
     border: none;
-    font-size: 20px;  
+    font-size: 20px;
+    resize: none;
+    font-family: inherit !important;
+   
    
 }
+
+
+
 
 
 

@@ -1,4 +1,3 @@
-import { Avatar } from "@material-ui/core";
 import React,{useState,useEffect} from "react";
 import "./Feed.css";
 import Post from "./Post";

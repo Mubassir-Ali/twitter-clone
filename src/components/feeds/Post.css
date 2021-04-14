@@ -39,8 +39,6 @@ img{
 .post__footer{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
-.post__footer>*:hover{
-    background-color: var(--twitter-hover) !important;
-}

@@ -12,6 +12,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { selectUser } from "../../features/userSlice";
 import {sendTweet} from '../../features/tweetSlice'
 import db from '../../firebase'
+import firebase from 'firebase'
 
 function TweetBox() {
   const [message, setMessage] = useState("");
@@ -40,18 +41,19 @@ const tweet=()=>{
 		imageURL,
 		displayName,
 		userName,
-		message
+		message,
+    timestamp:firebase.firestore.FieldValue.serverTimestamp()
   })
 
 
 
-	dispatch(sendTweet({
-		avatar:photo,
-		imageURL,
-		displayName,
-		userName,
-		message
-	}))
+	// dispatch(sendTweet({
+	// 	avatar:photo,
+	// 	imageURL,
+	// 	displayName,
+	// 	userName,
+	// 	message
+	// }))
 setImageURL('')
 setMessage('')
 
@@ -63,8 +65,9 @@ setMessage('')
       <form>
         <div className="tweetBox__input">
           <Avatar src={photo} />
-          <input
-            type="text"
+          <textarea
+           rows='3'
+            
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             placeholder="What's happening?"

@@ -11,13 +11,11 @@ import PublishOutlinedIcon from '@material-ui/icons/PublishOutlined';
 import {useSelector} from 'react-redux'
 import {selectTweet} from '../../features/tweetSlice'
 import db from '../../firebase'
+import * as timeago from 'timeago.js'
 
-const Post=({data:{avatar,imageURL,displayName,userName,message}})=> {
+const Post=({data:{avatar,imageURL,displayName,userName,message,timestamp}})=> {
 
 
-	// const {avatar,imageURL,displayName,userName,message}=useSelector(selectTweet)
-
-console.log(displayName);
 
 
 	return (
@@ -31,7 +29,7 @@ console.log(displayName);
 						<h3>
 							{displayName}{' '}
 							<span className="verifiedUser">
-								<VerifiedUserIcon /> @{userName} 45m
+								<VerifiedUserIcon /> @{userName } - {timeago.format(new Date(timestamp?.toDate()).toLocaleString())  }
 							</span>
 						</h3>
 						<IconButton>
@@ -47,10 +45,10 @@ console.log(displayName);
 
 				<img src={imageURL} alt="" />
                 <div className="post__footer">
-                <IconButton><ModeCommentOutlinedIcon/></IconButton>
-                <IconButton><RepeatOutlinedIcon/></IconButton>
-                <IconButton><FavoriteBorderOutlinedIcon/></IconButton>
-                <IconButton><PublishOutlinedIcon/></IconButton>
+				<div><IconButton><ModeCommentOutlinedIcon/></IconButton><small>6</small></div>
+				<div><IconButton><RepeatOutlinedIcon/></IconButton><small>3</small></div>
+				<div><IconButton><FavoriteBorderOutlinedIcon/></IconButton><small>10</small></div>
+				<div><IconButton><PublishOutlinedIcon/></IconButton><small>1</small></div>               
 
                 </div>
 			</div>
