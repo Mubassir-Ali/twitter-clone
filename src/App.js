@@ -8,6 +8,8 @@ import { useSelector, useDispatch } from "react-redux";
 import { auth } from "./firebase";
 import { logOut, login, selectUser } from "./features/userSlice";
 
+
+
 function App() {
   const user = useSelector(selectUser);
   const dispatch = useDispatch();

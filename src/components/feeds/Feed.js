@@ -12,7 +12,7 @@ function Feeds() {
 
   const [tweets, setTweets] = useState([])
 	useEffect(()=>{
-		db.collection('tweets').onSnapshot((snapshot)=>setTweets(snapshot.docs.map((doc)=>({id:doc.id,data:doc.data()}))))
+		db.collection('tweets').orderBy('timestamp', 'desc').onSnapshot((snapshot)=>setTweets(snapshot.docs.map((doc)=>({id:doc.id,data:doc.data()}))))
 	},[tweet])
 
 

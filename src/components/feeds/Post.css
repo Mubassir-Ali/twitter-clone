@@ -8,15 +8,20 @@
 
 .post__body{
     padding: 10px 20px 10px 0px;
+    width: 100%;
 }
 .post__headerText{
-    display: flex;
+    display: flex;   
+    width: 100%;
 }
 
 .post__headerText>h3{
-    flex: 1;
+    flex: 1 !important;
     font-weight: 600;
 }
+
+
+
 .verifiedUser{
     font-size: 16px !important;
     font-weight: 100;
